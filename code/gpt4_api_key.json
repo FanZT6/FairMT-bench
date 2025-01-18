@@ -1,0 +1,8 @@
+{
+    "api_type": "open_ai",
+    "api_base": "",
+    "api_version": "",
+    "api_key": "[YOUR api_key]",
+    "model_engine": "GPT-4 Turbo",
+    "model_family": "gpt-4-turbo"
+}
