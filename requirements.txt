@@ -1,0 +1,14 @@
+openai==0.27.6
+pandas==2.0.3
+tqdm==4.65.0
+torch==2.0.0
+tqdm==4.65.0
+transformers==4.37.2
+datasets==2.10.1
+bitsandbytes==0.37.2 
+accelerate==0.27.2
+numpy==1.24.2
+peft==0.3.0
+tiktoken==0.3.3
+openai==0.27.6
+einops==0.6.1
