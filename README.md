@@ -48,7 +48,7 @@ Here is the code template for evaluate the generated response of your model on F
 export OPENAI_API_KEY=<your_api>
 python code/evaluation_coreference.py \
 --model "gpt4" --prompt prompt_standard.txt \
---dataset save/coreference/<generated_file>.json --save_path save/coreference/evaluation```
+--dataset save/coreference/<generated_file>.json --save_path save/coreference/evaluation
 ```
 
 ## Citation
