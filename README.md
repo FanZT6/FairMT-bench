@@ -14,31 +14,31 @@ Here we provide a quick start on how to evaluate your model on FairMT-1K.
 
 First, create a Python virtual environment using e.g. Conda:
 ```shell
-conda create -n handbook python=3.10 && conda activate handbook
+conda create -n FairMT python=3.10 && conda activate FairMT
 ```
 
 
 You can then install the remaining package as follows:
 
 ```shell
+cd ./Fair-MT-1k
 pip install -r requirements.txt
 ```
 
 
 ## Generate Responses on FairMT-1K
 
-
 * Here is the code template for generate response of your model on FairMT-1K:
 ```shell
-python generate_answer.py \
---model <your_model> --prompt prompt_standard.txt \
+python code/generate_answer.py \
+--model <your_model> --prompt code/prompt_standard.txt \
 --dataset <data_split> --save_path <your_save_path>
 ```
 * For example
 ```shell
-python generate_answer.py \
---model "google/gemma-1.1-7b-it" --prompt prompt_standard.txt \
---dataset coreference.json --save_path data/coreference
+python code/generate_answer.py \
+--model "google/gemma-1.1-7b-it" --prompt code/prompt_standard.txt \
+--dataset data/coreference.json --save_path save/coreference
 ```
 
 ## Evaluation
@@ -46,9 +46,9 @@ python generate_answer.py \
 Here is the code template for evaluate the generated response of your model on FairMT-1K with GPT-4:
 ```shell
 export OPENAI_API_KEY=<your_api>
-python evaluation_coreference.py \
+python code/evaluation_coreference.py \
 --model "gpt4" --prompt prompt_standard.txt \
---dataset data/coreference/<generated_file>.json --save_path data/coreference/evaluation```
+--dataset save/coreference/<generated_file>.json --save_path save/coreference/evaluation```
 ```
 
 ## Citation
