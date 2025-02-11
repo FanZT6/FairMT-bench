@@ -319,7 +319,7 @@ for inputs in tqdm(data):
 print(f"\nCompleted, pelase check {save_name}")
 
 '''
-export OPENAI_API_KEY=sk-proj-xiYnPJXGZl4KuTYNlqWiT3BlbkFJiH91G4NkkKiehAWnAMiw
+export OPENAI_API_KEY=[Your_OPENAI_API_KEY]
 
 python coreference/generate_answer_coreference_prompt.py \
 --model "google/gemma-1.1-7b-it" --prompt prompt_standard.txt \
