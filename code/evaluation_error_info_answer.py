@@ -253,7 +253,7 @@ for inputs in tqdm(data):
 print(f"\nCompleted, pelase check {save_name}")
 
 '''
-export OPENAI_API_KEY=sk-proj-xiYnPJXGZl4KuTYNlqWiT3BlbkFJiH91G4NkkKiehAWnAMiw
+export OPENAI_API_KEY=[Your_OPENAI_API_KEY]
 
 python error_info_answer/evaluation.py \
 --model "gpt4" --prompt prompt_standard.txt \
